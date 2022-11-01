@@ -1,0 +1,238 @@
+.benefits {
+    display: flex;
+    background-color: #E8EDE5;
+}
+
+.benefits-item {
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+}
+
+@media screen and (max-width: 391px) {
+    .benefits-item {
+        margin: 12px;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item p {
+        font-size: 10px;
+        margin: 12px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 392px) and (max-width: 426px) {
+    .benefits-item {
+        margin: 12px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item p {
+        font-size: 12px;
+        margin: 12px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 427px) and (max-width: 767px) {
+    .benefits-item {
+        margin: 14px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item p {
+        font-size: 14px;
+        margin: 12px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .benefits {
+        justify-content: space-evenly;
+    }
+    .benefits-item {
+        margin: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .item {
+        width: 25%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .item img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .item p {
+        font-size: 12px;
+        margin: 12px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .benefits-item {
+        margin: 70px 0 120px 180px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .item img {
+        width: 50px;
+        height: 50px;
+        margin-right: 16px;
+    }
+
+    .item p {
+        text-align: left;
+        width: 180px;
+        font-size: 14px;
+        margin: 0 0 0 12px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    .benefits-item {
+        margin: 60px 0 100px 250px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 35px 0;
+    }
+
+    .item img {
+        width: 60px;
+        height: 60px;
+        margin-right: 16px;
+    }
+
+    .item p {
+        text-align: left;
+        width: 220px;
+        font-size: 18px;
+        margin: 0 0 0 18px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+    .benefits-item {
+        width: 50%;
+        margin: 71px 0 115px 220px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item {
+        width: 400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .item img {
+        width: 70px;
+        height: 70px;
+        margin-right: 18px;
+    }
+
+    .item p {
+        text-align: left;
+        width: 200px;
+        font-size: 16px;
+        margin: 0 0 0 18px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .benefits-item {
+        width: 50%;
+        margin: 71px 0 137px 377px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .item {
+        width: 400px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 45px 0;
+    }
+
+    .item img {
+        width: 90px;
+        height: 90px;
+        margin-right: 18px;
+    }
+
+    .item p {
+        text-align: left;
+        width: 250px;
+        font-size: 20px;
+        margin: 0 0 0 18px;
+    }
+}
+

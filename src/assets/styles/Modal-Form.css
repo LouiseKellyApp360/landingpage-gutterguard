@@ -1,0 +1,114 @@
+button.close {
+    border: 0;
+    border-radius: 6px;
+    background-color: #e2f2a8;
+}
+.modal-form input[type="submit"] {
+    border: 0;
+}
+.modal-form .form-title h3, .modal-form .form-description p  {
+    color: white;
+}
+@media screen and (max-width: 389px) {
+    .modal-form {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .modal-form .form-title h3 {
+        font-size: 16px;
+        margin: 3% 0;
+    }
+
+    .modal-form .form-description p {
+        font-size: 13px;
+        margin: 3% 0;
+    }
+    .modal-form form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .modal-form input {
+        height: 30px;
+        margin: 12px 0;
+    }
+
+    .modal-form input[type="submit"] {
+        height: 35px;
+        margin: 12px 0;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .modal-form {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .modal-form .form-title h3 {
+        font-size: 16px;
+        margin: 3% 0;
+    }
+
+    .modal-form .form-description p {
+        font-size: 13px;
+        margin: 3% 0;
+    }
+    .modal-form form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .modal-form input {
+        height: 30px;
+        margin: 12px 0;
+    }
+
+    .modal-form input[type="submit"] {
+        height: 35px;
+        margin: 12px 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .close {
+        font-size: 22px;
+        height: 50px;
+    }
+    .modal-form {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .modal-form .form-title h3 {
+        font-size: 24px;
+        margin: 3% 0;
+    }
+
+    .modal-form .form-description p {
+        font-size: 18px;
+        margin: 3% 0;
+    }
+    .modal-form form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .modal-form input {
+        height: 50px;
+        font-size: 22px;
+        margin: 16px 0;
+    }
+
+    .modal-form input[type="submit"] {
+        height: 50px;
+        margin: 12px 0;
+    }
+}

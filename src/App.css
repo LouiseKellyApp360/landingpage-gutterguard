@@ -1,0 +1,42 @@
+html, body * {
+    font-family: Poppins-Regular;
+    color: #203E28;
+  }
+  
+  body{
+    margin: 0;
+  }
+  
+  
+  .user-location-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .user-location-body{
+    margin: 5px;
+  }
+  .modal-buttons{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .modal-buttons button {
+    background-color: #e2f2a8;
+    color: #203E28;
+  }
+  @media screen and (max-width: 1023px) {
+    .modal-buttons button{
+      flex-direction: row;
+      font-size: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .modal-buttons button{
+      flex-direction: row;
+      width: 300px;
+      font-size: 20px;
+    }
+  }

@@ -1,0 +1,331 @@
+.search-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #1F3D27;
+    font-family: Poppins-Medium, sans-serif;
+    align-items: center;
+}
+
+.search-location h3 {
+    color: white;
+}
+
+.search-location-modal-body ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.search-location button {
+    background-color: #e2f2a8;
+    border: 0;
+    color: #1F3D27;
+    border-radius: 6px;
+}
+
+.search-location-modal {
+    height: 100%;
+}
+
+.search-location-modal-body {
+    overflow-y: scroll;
+}
+
+.search-location-modal ul li {
+    font-family: Poppins-Medium, sans-serif;
+}
+
+.search-location-modal-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-location-modal-body ul li:hover {
+    background-color: #e2f2a8;
+}
+@media screen and (max-width: 340px) {
+    .search-location h3 {
+        font-size: 12px;
+        margin: 20px 5px;
+    }
+
+    .search-location button {
+        font-size: 12px;
+        height: 30px;
+        width: 120px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        width: 180px;
+        flex-direction: column;
+    }
+
+    .search-location-modal-navigation img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .search-location-modal-body {
+        margin-top: 20px;
+    }
+
+    .search-location-modal-body ul li {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 341px) and (max-width: 389px) {
+    .search-location h3 {
+        font-size: 12px;
+        margin: 20px 10px;
+    }
+
+    .search-location button {
+        font-size: 12px;
+        height: 30px;
+        width: 140px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        width: 180px;
+        flex-direction: column;
+    }
+
+    .search-location-modal-navigation img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .search-location-modal-body {
+        margin-top: 20px;
+    }
+
+    .search-location-modal-body ul li {
+        margin: 5px 0;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 426px) {
+    .search-location h3 {
+        font-size: 12px;
+        margin: 20px 10px;
+    }
+
+    .search-location button {
+        margin-left: 20px;
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        justify-content: space-evenly;
+    }
+
+    .search-location-modal-navigation img {
+        width: 100px;
+        height: 50px;
+    }
+
+    .search-location-modal-body {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 427px) and (max-width: 767px) {
+    .search-location h3 {
+        font-size: 12px;
+        margin: 20px 10px;
+    }
+
+    .search-location button {
+        margin-left: 20px;
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+    }
+
+    .search-location-modal-navigation img {
+        width: 100px;
+        height: 60px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        justify-content: space-evenly;
+    }
+
+    .search-location-modal-body {
+        height: 100%;
+    }
+
+    .search-location-modal-body {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .search-location h3 {
+        font-size: 12px;
+        margin: 20px 10px;
+    }
+
+    .search-location button {
+        margin-left: 20px;
+        font-size: 12px;
+        height: 30px;
+        width: 150px;
+    }
+
+    .search-location-modal-navigation img {
+        width: 110px;
+        height: 60px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .search-location-modal-body {
+        height: 100%;
+        margin-top: 30px;
+    }
+    .search-location-modal-body ul li{
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .search-location h3 {
+        font-size: 20px;
+        margin: 28px 40px;
+    }
+
+    .search-location button {
+        margin-left: 40px;
+        font-size: 20px;
+        height: 40px;
+        width: 250px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .search-location-modal-body {
+        height: 100%;
+        margin-top: 30px;
+    }
+    .search-location-modal-body ul li {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    .search-location h3 {
+        font-size: 20px;
+        margin: 28px 40px;
+    }
+
+    .search-location button {
+        margin-left: 40px;
+        font-size: 20px;
+        height: 40px;
+        width: 250px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .search-location-modal-body ul li {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .search-location-modal-body {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+    .search-location h3 {
+        font-size: 20px;
+        margin: 28px 40px;
+    }
+
+    .search-location button {
+        margin-left: 40px;
+        font-size: 20px;
+        height: 40px;
+        width: 250px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+    .search-location-modal-body {
+        margin-top: 25px;
+
+    }
+    .search-location-modal-body ul li {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1680px) {
+    .search-location h3 {
+        font-size: 20px;
+        margin: 28px 40px;
+    }
+
+    .search-location button {
+        margin-left: 40px;
+        font-size: 20px;
+        height: 40px;
+        width: 250px;
+    }
+
+    .search-location-modal {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        justify-content: space-evenly;
+    }
+
+    .search-location-modal-body ul li {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .search-location-modal-body {
+        margin-top: 30px;
+    }
+}
+
+
+
+

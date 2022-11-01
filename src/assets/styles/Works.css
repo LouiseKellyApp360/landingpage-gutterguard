@@ -1,0 +1,361 @@
+.works {
+    display: flex;
+    flex-direction: column;
+}
+
+.works-title {
+    text-align: center;
+}
+
+.works-title h1 {
+    color: #5F725D;
+}
+
+.video {
+    border: 1px solid grey;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.video-wrapper {
+    display: table;
+    position: relative;
+    margin: auto;
+    width: 65%;
+}
+
+.playpause {
+    background-image: url("data:image/svg+xml,%3Csvg width='130' height='130' viewBox='0 0 130 130' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M65 0.25C29.243 0.25 0.25 29.243 0.25 65C0.25 100.757 29.243 129.75 65 129.75C100.757 129.75 129.75 100.757 129.75 65C129.75 29.243 100.757 0.25 65 0.25ZM85.827 65.9973L54.2613 88.9633C54.0883 89.0876 53.8843 89.1619 53.6718 89.1778C53.4593 89.1938 53.2465 89.1509 53.0568 89.0538C52.8671 88.9567 52.7079 88.8092 52.5965 88.6275C52.4852 88.4458 52.4261 88.2369 52.4258 88.0238V42.1207C52.4251 41.9072 52.4835 41.6976 52.5946 41.5153C52.7057 41.3329 52.8652 41.1849 53.0552 41.0876C53.2453 40.9904 53.4586 40.9476 53.6715 40.9641C53.8844 40.9807 54.0885 41.0558 54.2613 41.1813L85.827 64.1328C85.9761 64.2383 86.0977 64.378 86.1817 64.5402C86.2656 64.7024 86.3095 64.8824 86.3095 65.065C86.3095 65.2477 86.2656 65.4277 86.1817 65.5899C86.0977 65.7521 85.9761 65.8918 85.827 65.9973Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*z-index: 1000;*/
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (max-width: 389px) {
+    .works {
+        margin: 36px 28px;
+        justify-content: center;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-title h1 {
+        margin: 0;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-why p {
+        font-size: 12px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .video-wrapper {
+        width: 260px;
+    }
+
+    .video-wrapper video {
+        margin: auto;
+    }
+
+    .playpause {
+        height: 72px;
+        width: 72px;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 426px) {
+    .works {
+        margin: 36px 32px;
+        justify-content: center;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-title h1 {
+        margin: 0;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-why p {
+        font-size: 12px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .video-wrapper {
+        width: 327px;
+    }
+
+    .video-wrapper video {
+        margin: auto;
+    }
+
+    .playpause {
+        height: 72px;
+        width: 72px;
+    }
+}
+
+@media screen and (min-width: 427px) and (max-width: 767px) {
+    .works {
+        margin: 40px 32px;
+        justify-content: center;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-title h1 {
+        margin: 0;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-why p {
+        font-size: 14px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .video-wrapper {
+        width: 327px;
+    }
+
+    .video-wrapper video {
+        margin: auto;
+    }
+
+    .playpause {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .works {
+        margin: 60px 36px;
+        justify-content: center;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-title h1 {
+        margin: 0;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .works-why p {
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .video-wrapper {
+        width: 600px;
+    }
+
+    .video-wrapper video {
+        margin: auto;
+    }
+
+    .playpause {
+        height: 90px;
+        width: 90px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .works {
+        margin: 32px 38px;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .works-title h1 {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-bottom: 40px;
+    }
+
+    .works-why p {
+        font-size: 20px;
+        margin: 0 0 0 50px;
+    }
+
+    .video-wrapper video {
+        width: 600px;
+        margin: 0 50px;
+    }
+
+    .playpause {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+    .works {
+        margin: 42px 38px;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .works-title h1 {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-bottom: 40px;
+    }
+
+    .works-why p {
+        font-size: 20px;
+        margin: 0 0 0 50px;
+    }
+
+    .video-wrapper video {
+        width: 800px;
+        margin: 0 50px;
+    }
+
+    .playpause {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1679px) {
+    .works {
+        margin: 64px;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .works-title h1 {
+        margin: 0 auto;
+        width: 80%;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-bottom: 40px;
+    }
+
+    .works-why p {
+        font-size: 20px;
+        margin: 0 0 0 50px;
+    }
+
+    .video-wrapper video {
+        width: 900px;
+        margin: 0 80px;
+    }
+
+    .playpause {
+        width: 115px;
+        height: 115px;
+    }
+}
+
+@media screen and (min-width: 1680px) {
+    .works {
+        margin: 120px;
+    }
+
+    .works-title {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+
+    .works-title h1 {
+        margin: 0 290px;
+        width: 1095px;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .works-why {
+        margin-bottom: 40px;
+    }
+
+    .works-why p {
+        font-size: 24px;
+        margin: 0 0 0 100px;
+    }
+
+    .video-wrapper video {
+        width: 1095px;
+        margin: 0 0 64px auto;
+    }
+
+    .playpause {
+        width: 135px;
+        height: 135px;
+    }
+}
+
+
+
+
