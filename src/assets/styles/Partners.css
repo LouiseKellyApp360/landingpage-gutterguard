@@ -22,8 +22,8 @@
         margin: 0 0 5px 0;
     }
     .partner-item img {
-        width: 200px;
-        height: 174px;
+        height: auto;
+        width: auto;
         margin: 10px 75px;
     }
     .partner-item img:last-child{
@@ -46,8 +46,8 @@
         margin: 0 0 10px 0;
     }
     .partner-item img {
-        height: 150px;
-        width: 200px;
+        height: auto;
+        width: auto;
         margin: 10px auto;
     }
     .partner-item img:last-child{
@@ -70,7 +70,8 @@
         margin: 0 0 10px 0;
     }
     .partner-item img {
-        height: 174px;
+        height: auto;
+        width: auto;
         margin: 10px 75px;
     }
     .partner-item img:last-child{
@@ -94,9 +95,8 @@
         margin: 0 0 10px 0;
     }
     .partner-item img {
-        /*height: 174px;*/
         height: auto;
-        width: 350px;
+        width: auto;
         margin: 10px 0;
     }
     .partner-item img:last-child{
@@ -120,8 +120,8 @@
         margin: 0 0 10px 0;
     }
     .partner-item img {
-        height: 150px;
-        width: 150px;
+        height: auto;
+        width: auto;
         margin: 10px auto;
     }
     .partner-item img:last-child{
@@ -145,8 +145,8 @@
         margin: 0 0 10px 0;
     }
     .partner-item img {
-        height: 174px;
-        width: 150px;
+        height: auto;
+        width: auto;
         margin: 10px auto;
     }
     .partner-item img:last-child{
@@ -170,9 +170,9 @@
         margin: 0 0 40px 0;
     }
     .partner-item img {
-        height: 154px;
+        height: auto;
+        width: auto;
         margin: 0 20px;
-        width: 200px;
     }
     .partner-item img:last-child{
         margin-bottom: 0;
@@ -195,8 +195,8 @@
         margin: 0 0 40px 0;
     }
     .partner-item img {
-        height: 174px;
         margin: 0 20px;
+        height: auto;
         width: auto;
     }
     .partner-item img:last-child{

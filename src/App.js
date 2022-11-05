@@ -9,6 +9,7 @@ import Banner from "./Components/Banner/Banner";
 import Footer from "./Components/Footer/Footer";
 import SearchLocation from "./Components/SearchLocation/SearchLocation";
 import {UserLocationContext} from "./context/UserLocationContext";
+import Modal from "react-modal";
 
 function App() {
     const jsonData = JSON.parse(JSON.stringify(jsonConfig));
@@ -17,7 +18,7 @@ function App() {
     const getUserState = localStorage.getItem('correctState');
     const getUserCity = localStorage.getItem('correctCity');
     const [correctRegion, setCorrectRegion] = useState('');
-    const [userData, setUserData] = useState({});
+    const [userData, setUserData] = useState({} || jsonData['Brisbane and South-East Queensland']);
     const [userIpCity, setUserIpCity] = useState('');
     const [findCity, setFindCity] = useState('');
 
@@ -29,10 +30,11 @@ function App() {
     //code works good at 4:59 AM 11/5/2022 ->
     useEffect(() => {
         const userIp = async () => {
-            await axios.get('https://ipapi.co/json')
-            .then((res) => {
-                getUserRegion === null && setUserIpCity(res.data['city']);
-            });
+            // await axios.get('https://ipapi.co/json')
+            // .then((res) => {
+                // getUserRegion === null && setUserIpCity(res.data['city']);
+                getUserRegion === null && setUserIpCity('Brisbane');
+            // });
         }
 
         const userLocation = () => {
@@ -57,12 +59,6 @@ function App() {
         userIp().then(() => {
             userLocation()
             getUserRegion && setUserData(jsonData[getUserRegion]);
-            // if(correctRegion !== '' && Object.keys(cities[getUserState][getUserRegion]).length < 1) {
-            //     localStorage.removeItem('correctRegion');
-            //     localStorage.removeItem('correctState');
-            //     localStorage.removeItem('correctCity');
-            //     window.location.reload();
-            // }
         })
 
 
@@ -70,7 +66,13 @@ function App() {
 
 
     userIpCity && getUserState === null && window.location.replace("https://www.gutterguard.company/");
-
+    if(correctRegion !== '' && getUserRegion === null && Object.keys(cities[getUserState][getUserRegion]).length === 0) {
+        // localStorage.removeItem('correctRegion');
+        // localStorage.removeItem('correctState');
+        // localStorage.removeItem('correctCity');
+        window.location.replace('https://www.gutterguard.company');
+    }
+    Modal.setAppElement(document.getElementById('root'));
 
     return (
         <UserLocationContext.Provider value={{correctRegion, updateCorrectRegion}}>
