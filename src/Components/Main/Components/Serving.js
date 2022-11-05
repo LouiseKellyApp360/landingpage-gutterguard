@@ -7,9 +7,8 @@ const Serving = ({userData}) => {
     return (
         <div className={'serving'}>
             <div className={'serving-title'}>
-                <h3>Serving the Mid North Coast</h3>
-                <p>Our team have delivered hundreds of gutter replacement and gutter guard work in the Coffs Harbour
-                    and Mid North Coast region</p>
+                <h3>{userData.servingTitle}</h3>
+                <p>{userData.servingDescription}</p>
             </div>
             <div className={'serving-images'}>
                  <img className={'roof-working-image'} src={roofWorkingImage} alt={'roof-working'}/>

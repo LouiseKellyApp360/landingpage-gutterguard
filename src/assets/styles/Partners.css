@@ -4,6 +4,8 @@
 
 .partner-item {
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 @media screen and (max-width: 389px) {
@@ -20,6 +22,7 @@
         margin: 0 0 5px 0;
     }
     .partner-item img {
+        width: 200px;
         height: 174px;
         margin: 10px 75px;
     }
@@ -43,8 +46,9 @@
         margin: 0 0 10px 0;
     }
     .partner-item img {
-        height: 174px;
-        margin: 10px 75px;
+        height: 150px;
+        width: 200px;
+        margin: 10px auto;
     }
     .partner-item img:last-child{
         margin-bottom: 0;
@@ -90,7 +94,8 @@
         margin: 0 0 10px 0;
     }
     .partner-item img {
-        height: 174px;
+        /*height: 174px;*/
+        height: auto;
         width: 350px;
         margin: 10px 0;
     }

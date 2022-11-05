@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../assets/styles/Footer.css';
 
-const Footer = ({userData: {footerContactUs, footerLocation, footerLogo, footerLogoName}}) => {
+const Footer = ({userData: {footerContactUs, footerLocation, footerLogo, footerLogoName, footerAddress}}) => {
 
     return (
         <div className={'footer-container'}>
@@ -14,8 +14,8 @@ const Footer = ({userData: {footerContactUs, footerLocation, footerLogo, footerL
             <div className={'footer-links'}>
                 <div className={'links'}>
                     <h3>Links</h3>
-                    <a href={'https://www.gutterguard.company/terms-and-conditions'}>Privacy Policy</a> <br/><a
-                    href={'https://www.gutterguard.company/privacy-policy'}>Terms and Conditions</a>
+                    <a href={'https://www.gutterguard.company/terms-and-conditions'}>Privacy Policy</a> <br/>
+                    <a href={'https://www.gutterguard.company/privacy-policy'}>Terms and Conditions</a>
                 </div>
                 <div className={'contact-us'}>
                     <h3>Contact us</h3>
@@ -38,11 +38,8 @@ const Footer = ({userData: {footerContactUs, footerLocation, footerLogo, footerL
                         8am to 6pm</p>
                 </div>
                 <div className={'head-offic'}>
-                    <h3>Head office</h3>
-                    <p>Gutterguard Australia<br/>
-                        3 Old Regret Rd,<br/>
-                        Clifton Grove,<br/><br/>
-                        www.gutterguard.company</p>
+                    <h3>Address</h3>
+                    <p style={{whiteSpace: 'pre-wrap'}}>{footerAddress}</p>
                 </div>
                 <div className={'locations'}>
                     <h3>Locations</h3>

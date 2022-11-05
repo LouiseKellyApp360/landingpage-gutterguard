@@ -4,9 +4,9 @@ import {Circle, Marker, GoogleMap, useLoadScript} from '@react-google-maps/api';
 const Maps = ({userData: {mapCenter, circleCenter, makerCenter, circleRadius}}) => {
     const mapRef = useRef();
     const circleRef = useRef();
-    const [centerCircle, setCenterCircle] = useState({});
-    const [centerMap, setCenterMap] = useState({});
-    const [centerMaker, setCenterMaker] = useState({});
+    const [centerCircle, setCenterCircle] = useState({} || {lat: 100, lng: 100});
+    const [centerMap, setCenterMap] = useState({} || {lat: 100, lng: 100});
+    const [centerMaker, setCenterMaker] = useState({} || {lat: 100, lng: 100});
     const [radiusCircle, setRadiusCircle] = useState(0);
 
     useEffect(() => {
@@ -20,8 +20,8 @@ const Maps = ({userData: {mapCenter, circleCenter, makerCenter, circleRadius}}) 
     });
     const loadHandler = (map) => {
         mapRef.current = map;
-    };
 
+    };
     return (
         <>{isLoaded &&
             <GoogleMap
@@ -33,14 +33,14 @@ const Maps = ({userData: {mapCenter, circleCenter, makerCenter, circleRadius}}) 
                     width: "100%"
                 }}
             >
-                <Marker position={centerMaker} />
+                <Marker position={centerMaker}/>
                 <Circle
                     ref={circleRef}
                     center={centerCircle}
                     radius={radiusCircle}
                     options={{fillColor: "transparent", strokeColor: "black", strokeWeight: 1}}
                     // onDragStart={}
-                    onDragEnd={(event) => console.log(event.latLng.toString())}
+                    // onDragEnd={(event) => console.log(event.latLng.toString())}
                 />
             </GoogleMap>}
         </>

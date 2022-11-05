@@ -3,18 +3,22 @@ import '../../assets/styles/SearchLocation.css';
 import Modal from "react-modal";
 import {UserLocationContext} from "../../context/UserLocationContext";
 
-const SearchLocation = ({cities, logo}) => {
+const SearchLocation = ({userData}) => {
     const [isOpenSearchLocation, setIsOpenSearchLocation] = useState(false);
-    const [aState, setAState] = useState('');
-    const [stateIndex, setStateIndex] = useState(0);
-    const [city, setCity] = useState('');
+    const [selectState, setSelectState] = useState(localStorage.getItem('correctState'));
+    const [selectRegion, setSelectRegion] = useState(localStorage.getItem('correctRegion'));
     const {updateCorrectRegion} = useContext(UserLocationContext);
+    const [other, setOther] = useState(false);
+    const [cities] = useState(userData['cities']);
 
     const searchLocation = () => {
+        localStorage.removeItem('correctCity');
         localStorage.removeItem('correctRegion');
+        localStorage.removeItem('correctState');
+        updateCorrectRegion('');
         setIsOpenSearchLocation(true);
-        setAState('');
-        setCity('');
+        setSelectRegion('');
+        setSelectState('');
     }
 
     const closeModal = () => {
@@ -23,7 +27,7 @@ const SearchLocation = ({cities, logo}) => {
 
     const customStyles = {
         content: {
-            height: '70%',
+            height: 'auto',
             overflow: 'scroll',
             overflowY: 'hidden',
             top: '50%',
@@ -41,30 +45,75 @@ const SearchLocation = ({cities, logo}) => {
             <button onClick={searchLocation}>Search Locations</button>
             <Modal isOpen={isOpenSearchLocation} onRequestClose={closeModal} style={customStyles}>
                 <div className={'search-location-modal'}>
-                    <div className={'search-location-modal-navigation'}>
-                        <img src={logo} alt={'logo'}/>
-                        <button type="button" onClick={closeModal} className="btn-close"
-                                aria-label="Close"></button>
+                    <div className={'search-location-modal-title'}>
+                        {selectState === '' && <h3>Select your state</h3>}
+                        {selectState !== '' && selectRegion === '' && <h3>Select your region</h3>}
+                        {selectState !== '' && (selectRegion !== '' && selectRegion !== 'other') && <h3>Locations</h3>}
                     </div>
                     <div className={'search-location-modal-body'}>
                         <ul>
-                            {!aState && cities.map((state, index) => {
-                                return <li key={state} onClick={() => {
-                                    setAState(state[0]);
-                                    setStateIndex(index);
-                                    localStorage.setItem('correctState', state[0]);
-                                    localStorage.setItem('correctRegion', state[1]);
-                                    updateCorrectRegion(state[1]);
-                                }}>{state[0]}</li>
-                            })}
-                            {aState && !city && cities[stateIndex].map((city, index) => {
-                                return <li key={city} onClick={() => {
-                                    setCity(city);
-                                    localStorage.setItem('correctCity', city);
-                                    closeModal();
-                                }}>{index > 0 && city}</li>
-                            })}
-                        < /ul>
+                            {selectState && selectRegion === '' && <li style={{fontStyle: 'Poppins-Medium, sans-serif'}}
+                                                                       key={selectState}>{selectState}</li>}
+                            {selectRegion !== '' && <li style={{fontStyle: 'Poppins-Medium, sans-serif'}}
+                                                        key={selectRegion}>{selectRegion}</li>}
+                            {selectState === '' && (
+                                (Object.keys(cities).map((item) => {
+                                    return <li key={item} className={'hover'} onClick={() => {
+                                        localStorage.setItem('correctState', item);
+                                        setSelectState(item);
+                                        setOther(true)
+                                    }}>{item}</li>
+                                }))
+                            )}
+                            {selectState !== '' && selectRegion === '' &&
+                                (
+                                    Object.keys(cities[selectState]).map((region => {
+                                            return <li key={region} className={'hover'} onClick={() => {
+                                                localStorage.setItem('correctRegion', region);
+                                                setSelectRegion(region);
+                                                setOther(false);
+                                                updateCorrectRegion(region);
+                                                localStorage.removeItem('correctCity');
+                                                setTimeout(() => {
+                                                    closeModal()
+                                                }, 3000)
+                                            }}>{region}</li>
+                                        }
+                                    ))
+                                )
+                            }
+                            {other === true && <li key={'other'} className={'hover'} onClick={() => {
+                                setSelectRegion('other');
+                                setTimeout(() => {
+                                    closeModal()
+                                    localStorage.removeItem('correctCity');
+                                    localStorage.removeItem('correctRegion');
+                                    localStorage.removeItem('correctState');
+                                    window.location.replace('https://gutterguard.company')
+                                }, 3000);
+                                setOther(false)
+                            }}>Other</li>}
+
+                        </ul>
+                        <ul> {selectState !== '' && (selectRegion !== '' && selectRegion === "other") &&
+                            (
+                                <h5>Talk to our certified roofing professional about gutter guard installers
+                                    and gutter replacement specialists in your area.
+                                </h5>
+                            )}
+                        </ul>
+                        {selectState !== '' && selectRegion !== '' && selectRegion !== "other" &&
+                            Object.keys(userData['modalUserLocation'][selectRegion]).map((region, index) => {
+                                return <ul key={index}>
+                                    <li>{region}</li>
+                                    <ul>
+                                        {Object.values(userData['modalUserLocation'][selectRegion][region]).map((item) => {
+                                            return <li>{item}</li>
+                                        })}
+                                    </ul>
+                                </ul>
+                            })
+                        }
                     </div>
                 </div>
             </Modal>

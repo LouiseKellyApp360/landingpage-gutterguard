@@ -3,12 +3,16 @@
     flex-direction: row;
     justify-content: center;
     background-color: #1F3D27;
-    font-family: Poppins-Medium, sans-serif;
+    font-family: Poppins-Regular, sans-serif;
     align-items: center;
 }
 
 .search-location h3 {
     color: white;
+}
+
+.search-location-modal-body ul li.other:first-child {
+    order: 4;
 }
 
 .search-location-modal-body ul {
@@ -27,6 +31,10 @@
     height: 100%;
 }
 
+.search-location-modal-title h3 {
+    font-family: Poppins-Bold, sans-serif;
+}
+
 .search-location-modal-body {
     overflow-y: scroll;
 }
@@ -34,17 +42,20 @@
 .search-location-modal ul li {
     font-family: Poppins-Medium, sans-serif;
 }
+.search-location-modal ul ul li {
+    padding-left: 30px;
+}
 
 .search-location-modal-navigation {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
 
-.search-location-modal-body ul li:hover {
+.search-location-modal-body ul li.hover:hover {
     background-color: #e2f2a8;
 }
+
 @media screen and (max-width: 340px) {
     .search-location h3 {
         font-size: 12px;
@@ -126,7 +137,6 @@
         display: flex;
         flex-direction: column;
         width: 200px;
-        justify-content: space-evenly;
     }
 
     .search-location-modal-navigation img {
@@ -161,7 +171,6 @@
         display: flex;
         flex-direction: column;
         width: 250px;
-        justify-content: space-evenly;
     }
 
     .search-location-modal-body {
@@ -195,7 +204,6 @@
         display: flex;
         flex-direction: column;
         width: 300px;
-        justify-content: space-evenly;
     }
 
     .search-location-modal-body {
@@ -224,7 +232,6 @@
         display: flex;
         flex-direction: column;
         width: 300px;
-        justify-content: space-evenly;
     }
 
     .search-location-modal-body {
@@ -253,7 +260,6 @@
         display: flex;
         flex-direction: column;
         width: 300px;
-        justify-content: space-evenly;
     }
 
     .search-location-modal-body ul li {
@@ -283,11 +289,12 @@
         display: flex;
         flex-direction: column;
         width: 300px;
-        justify-content: space-evenly;
+    }
+    .search-location-modal-title {
+        margin-top: 25px;
     }
     .search-location-modal-body {
-        margin-top: 25px;
-
+        margin-top: 10px;
     }
     .search-location-modal-body ul li {
         font-size: 20px;
@@ -313,7 +320,6 @@
         display: flex;
         flex-direction: column;
         width: 300px;
-        justify-content: space-evenly;
     }
 
     .search-location-modal-body ul li {

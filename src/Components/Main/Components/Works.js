@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import '../../../assets/styles/Works.css';
 import $ from 'jquery';
-import videoPoster from '../../../assets/image/roof_working.png'
+import videoPoster from '../../../assets/image/banner-image.png'
 import videoWorks from '../../../assets/video/Gutterguards.mp4';
 
 const Works = ({userData: {worksTitle, worksDescription}}) => {

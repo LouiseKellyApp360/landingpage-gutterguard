@@ -34,6 +34,8 @@ const Banner = () => {
         ).catch((error)=> {console.error(error)});
         reset();
     };
+
+
     return (
         <div className={'banner'}>
             <div className={'banner-image'}>
