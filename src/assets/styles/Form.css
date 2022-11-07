@@ -64,7 +64,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .form-container {
         width: 300px;
-        top: 590px;
+        top: 670px;
         right: 90px;
     }
 
@@ -115,7 +115,7 @@
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
     .form-container {
         width: 310px;
-        top: 580px;
+        top: 660px;
         right: 210px;
     }
 
@@ -166,7 +166,7 @@
 @media screen and (min-width: 1440px) and (max-width: 1529px) {
     .form-container {
         width: 380px;
-        top: 940px;
+        top: 1000px;
         right: 225px;
     }
 
@@ -217,7 +217,7 @@
 @media screen and (min-width: 1529px) and (max-width: 1679px) {
     .form-container {
         width: 380px;
-        top: 940px;
+        top: 1000px;
         right: 260px;
     }
     .form-description {
@@ -264,10 +264,57 @@
     }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1680px) and (max-width: 1799px) {
     .form-container {
         width: 481px;
-        top: 880px;
+        top: 960px;
+        right: 270px;
+    }
+
+    .form-description {
+        margin: 20px 32px;
+    }
+
+    .form-description p {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .form-container .form-title {
+        background-color: #E2F2A8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+    }
+
+    .email-form input:first-child {
+        margin-top: 24px;
+    }
+
+    .email-form input:last-child {
+        margin-bottom: 24px;
+    }
+
+    .email-form input {
+        height: 70px;
+        margin: 14px;
+        text-indent: 24px;
+        width: 90%;
+        font-size: 24px;
+    }
+
+    .email-form input[type=submit] {
+        font-size: 28px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .form-container {
+        width: 481px;
+        top: 960px;
         right: 335px;
     }
 

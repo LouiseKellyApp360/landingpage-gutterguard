@@ -141,7 +141,7 @@
     }
 
     .banner-image img {
-        height: 381px;
+        /*height: 381px;*/
         width: 100%;
     }
 
@@ -272,7 +272,44 @@
     }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1680px) and (max-width: 1799px) {
+    .banner-image {
+        width: 50%;
+    }
+
+    .banner-image img {
+        height: 876px;
+        width: 100%;
+    }
+
+    .banner-title {
+        width: 50%;
+    }
+
+    .banner-title * {
+        margin: 40px 0;
+    }
+
+    .banner .banner-title h1 {
+        font-size: 50px;
+        margin-top: 200px;
+        margin-left: 143px;
+        width: 50%;
+        line-height: 72px;
+    }
+
+    .banner .banner-title p {
+        font-size: 32px;
+        width: 600px;
+        margin-left: 143px;
+    }
+
+    .form-mobile-modal {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1800px) {
     .banner-image {
         width: 50%;
     }

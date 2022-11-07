@@ -34,12 +34,16 @@ const Footer = ({userData: {footerContactUs, footerLocation, footerLogo, footerL
                 </div>
                 <div className={'opening-hours'}>
                     <h3>Opening Hours</h3>
-                    <p>We are open 6 days a week<br/>
-                        8am to 6pm</p>
+                    <ul>
+                        <li><p>We are open 6 days a week<br/>
+                            8am to 6pm</p></li>
+                    </ul>
                 </div>
-                <div className={'head-offic'}>
+                <div className={'address'}>
                     <h3>Address</h3>
-                    <p style={{whiteSpace: 'pre-wrap'}}>{footerAddress}</p>
+                    <ul>
+                        <li><p style={{whiteSpace: 'pre-wrap'}}>{footerAddress}</p></li>
+                    </ul>
                 </div>
                 <div className={'locations'}>
                     <h3>Locations</h3>

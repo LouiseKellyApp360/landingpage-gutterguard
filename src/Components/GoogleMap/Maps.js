@@ -27,7 +27,7 @@ const Maps = ({userData: {mapCenter, circleCenter, makerCenter, circleRadius}}) 
             <GoogleMap
                 onLoad={loadHandler}
                 center={centerMap}
-                zoom={window.screen.width > 1440 ? 8 : window.screen.width > 1280 ? 7 : 5.5}
+                zoom={window.screen.width > 1440 ? 8.5 : window.screen.width > 1024 ? 6.5 : 6}
                 mapContainerStyle={{
                     height: "100%",
                     width: "100%"
@@ -39,8 +39,6 @@ const Maps = ({userData: {mapCenter, circleCenter, makerCenter, circleRadius}}) 
                     center={centerCircle}
                     radius={radiusCircle}
                     options={{fillColor: "transparent", strokeColor: "black", strokeWeight: 1}}
-                    // onDragStart={}
-                    // onDragEnd={(event) => console.log(event.latLng.toString())}
                 />
             </GoogleMap>}
         </>

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import './App.css';
 import Header from "./Components/Header/Header";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css'
 import jsonConfig from './config/config.json';
 import axios from "axios";
 import Main from "./Components/Main/Main";
@@ -11,14 +12,20 @@ import SearchLocation from "./Components/SearchLocation/SearchLocation";
 import {UserLocationContext} from "./context/UserLocationContext";
 import Modal from "react-modal";
 
+export const resetLocalStorage = () => {
+    localStorage.removeItem('correctState');
+    localStorage.removeItem('correctRegion');
+    localStorage.removeItem('correctCity');
+}
+
 function App() {
     const jsonData = JSON.parse(JSON.stringify(jsonConfig));
     const cities = jsonData['cities'];
-    const getUserRegion = localStorage.getItem('correctRegion');
+    const getUserRegion = localStorage.getItem('correctRegion')
     const getUserState = localStorage.getItem('correctState');
     const getUserCity = localStorage.getItem('correctCity');
     const [correctRegion, setCorrectRegion] = useState('');
-    const [userData, setUserData] = useState({} || jsonData['Brisbane and South-East Queensland']);
+    const [userData, setUserData] = useState(jsonData[getUserRegion] || jsonData['Brisbane and South-East Queensland']);
     const [userIpCity, setUserIpCity] = useState('');
     const [findCity, setFindCity] = useState('');
 
@@ -27,14 +34,15 @@ function App() {
     }
 
     //Todo: remove the comment below
-    //code works good at 4:59 AM 11/5/2022 ->
+    //code works good at 4:59 AM 11/5/2022
+    //code works good at 11:30 PM 11/5/2022
+    //code works good at 3:32 PM 11/7/2022
     useEffect(() => {
         const userIp = async () => {
-            // await axios.get('https://ipapi.co/json')
-            // .then((res) => {
-                // getUserRegion === null && setUserIpCity(res.data['city']);
-                getUserRegion === null && setUserIpCity('Brisbane');
-            // });
+            await axios.get('https://ipapi.co/json')
+                .then((res) => {
+                    getUserRegion === null && setUserIpCity(res.data['city']);
+                });
         }
 
         const userLocation = () => {
@@ -61,17 +69,11 @@ function App() {
             getUserRegion && setUserData(jsonData[getUserRegion]);
         })
 
-
     }, [getUserRegion, findCity, userIpCity, correctRegion, getUserState, getUserCity]);
 
 
-    userIpCity && getUserState === null && window.location.replace("https://www.gutterguard.company/");
-    if(correctRegion !== '' && getUserRegion === null && Object.keys(cities[getUserState][getUserRegion]).length === 0) {
-        // localStorage.removeItem('correctRegion');
-        // localStorage.removeItem('correctState');
-        // localStorage.removeItem('correctCity');
-        window.location.replace('https://www.gutterguard.company');
-    }
+    // userIpCity && getUserState === null && window.location.replace("https://www.gutterguard.company/"); -> not needed
+
     Modal.setAppElement(document.getElementById('root'));
 
     return (

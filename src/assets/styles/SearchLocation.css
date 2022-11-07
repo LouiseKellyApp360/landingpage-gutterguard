@@ -11,6 +11,17 @@
     color: white;
 }
 
+.search-location-modal {
+    width: 100%;
+}
+
+.search-location-modal-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .search-location-modal-body ul li.other:first-child {
     order: 4;
 }
@@ -20,6 +31,10 @@
     padding: 0;
 }
 
+.search-location-modal {
+    width: 100%;
+}
+
 .search-location button {
     background-color: #e2f2a8;
     border: 0;
@@ -27,8 +42,11 @@
     border-radius: 6px;
 }
 
-.search-location-modal {
-    height: 100%;
+.search-location-modal-title .x-mark {
+    font-size: 18px;
+    font-family: Poppins-Bold, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 .search-location-modal-title h3 {
@@ -41,6 +59,7 @@
 
 .search-location-modal ul li {
     font-family: Poppins-Medium, sans-serif;
+    width: 100%;
 }
 
 .search-location-modal ul ul li {
@@ -71,7 +90,6 @@
 
     .search-location-modal {
         display: flex;
-        width: 180px;
         flex-direction: column;
     }
 
@@ -84,8 +102,24 @@
         margin-top: 20px;
     }
 
+    .search-location-modal-title {
+        gap: 20px;
+    }
+
+    .search-location-modal .search-location-modal-title h3 {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
+        font-size: 14px;
+        margin: 0 0 5px 0;
+        fontStyle: 'Poppins-Bold, sans-serif'
+    }
+
     .search-location-modal-body ul li {
         margin: 5px 0;
+        font-size: 10px;
     }
 }
 
@@ -116,6 +150,10 @@
         margin-top: 20px;
     }
 
+    .search-location-modal-title {
+        gap: 20px;
+    }
+
     .search-location-modal .search-location-modal-title h3 {
         font-size: 14px;
         margin: 0;
@@ -124,7 +162,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 14px;
         margin: 0 0 5px 0;
-        fontStyle: 'Poppins-Medium, sans-serif'
+        fontStyle: 'Poppins-Bold, sans-serif'
     }
 
     .search-location-modal-body ul li {
@@ -161,15 +199,19 @@
         margin-top: 20px;
     }
 
+    .search-location-modal-title {
+        gap: 20px;
+    }
+
     .search-location-modal .search-location-modal-title h3 {
         font-size: 14px;
         margin: 0;
     }
 
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
-        font-size: 16px;
+        font-size: 14px;
         margin: 0 0 5px 0;
-        fontStyle: 'Poppins-Medium, sans-serif'
+        fontStyle: 'Poppins-Bold, sans-serif'
     }
 
     .search-location-modal-body ul li {
@@ -207,9 +249,13 @@
 
     }
 
+    .search-location-modal-title {
+        gap: 30px;
+    }
+
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 14px;
-        fontStyle: 'Poppins-Medium, sans-serif';
+        fontStyle: 'Poppins-Bold, sans-serif';
         margin: 20px 0;
     }
 
@@ -241,15 +287,22 @@
         height: 60px;
     }
 
+    .search-location-modal-title {
+        gap: 20px;
+    }
+
     .search-location-modal {
         display: flex;
         flex-direction: column;
-        width: 300px;
     }
 
     .search-location-modal-body {
         height: 100%;
         margin-top: 30px;
+    }
+
+    .search-location-modal-title {
+        gap: 40px;
     }
 
     .search-location-modal .search-location-modal-title h3 {
@@ -258,9 +311,9 @@
     }
 
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
-        font-size: 18px;
+        font-size: 16px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Medium, sans-serif'
+        fontStyle: 'Poppins-Bold, sans-serif'
     }
 
     .search-location-modal-body ul li {
@@ -285,12 +338,15 @@
     .search-location-modal {
         display: flex;
         flex-direction: column;
-        width: 300px;
     }
 
     .search-location-modal-body {
         height: 100%;
         margin-top: 30px;
+    }
+
+    .search-location-modal-title {
+        gap: 40px;
     }
 
     .search-location-modal .search-location-modal-title h3 {
@@ -299,9 +355,9 @@
     }
 
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
-        font-size: 22px;
+        font-size: 18px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Medium, sans-serif'
+        fontStyle: 'Poppins-Bold, sans-serif'
     }
 
     .search-location-modal-body ul li {
@@ -326,18 +382,23 @@
     .search-location-modal {
         display: flex;
         flex-direction: column;
-        width: 300px;
+    }
+
+    .search-location-modal-title {
+        gap: 40px;
     }
 
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
-        font-size: 24px;
+        font-size: 22px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Medium, sans-serif'
+        fontStyle: 'Poppins-Bold, sans-serif'
     }
+
     .search-location-modal .search-location-modal-title h3 {
         font-size: 22px;
         margin: 0;
     }
+
     .search-location-modal-body ul li {
         font-size: 16px;
         margin-bottom: 8px;
@@ -364,11 +425,14 @@
     .search-location-modal {
         display: flex;
         flex-direction: column;
-        width: 300px;
     }
 
     .search-location-modal-title {
         margin-top: 25px;
+    }
+
+    .search-location-modal-title {
+        gap: 60px;
     }
 
     .search-location-modal-body {
@@ -381,9 +445,9 @@
     }
 
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
-        font-size: 28px;
+        font-size: 25px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Medium, sans-serif'
+        fontStyle: 'Poppins-Bold, sans-serif'
     }
 
     .search-location-modal-body ul li {
@@ -409,7 +473,6 @@
     .search-location-modal {
         display: flex;
         flex-direction: column;
-        width: 300px;
     }
 
     .search-location-modal .search-location-modal-title h3 {
@@ -417,15 +480,21 @@
         margin: 0;
     }
 
+    .search-location-modal-title {
+        gap: 60px;
+    }
+
     .search-location-modal-body ul li {
         font-size: 20px;
         margin-bottom: 5px;
     }
-    .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region{
+
+    .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 32px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Medium, sans-serif'
+        fontStyle: 'Poppins-Bold, sans-serif'
     }
+
     .search-location-modal-body {
         margin-top: 30px;
         font-size: 24px;

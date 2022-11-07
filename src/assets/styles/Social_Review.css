@@ -288,6 +288,7 @@
     .customer-quote {
         font-size: 20px;
         margin: 0 0 40px 0;
+        height: 120px;
     }
 
     .customer .starts {
@@ -303,6 +304,7 @@
         width: 55px;
         height: 55px;
     }
+
     .profile-data {
         height: 100%;
         display: flex;
