@@ -6,8 +6,8 @@ import {resetLocalStorage} from "../../App";
 
 const SearchLocation = ({userData}) => {
     const [isOpenSearchLocation, setIsOpenSearchLocation] = useState(false);
-    const [selectedState, setSelectedState] = useState(localStorage.getItem('correctState'));
-    const [selectedRegion, setSelectedRegion] = useState(localStorage.getItem('correctRegion'));
+    const [selectState, setSelectState] = useState(localStorage.getItem('correctState'));
+    const [selectRegion, setSelectRegion] = useState(localStorage.getItem('correctRegion'));
     const {updateCorrectRegion} = useContext(UserLocationContext);
     const [other, setOther] = useState(false);
     const [cities] = useState(userData['cities']);
@@ -24,15 +24,11 @@ const SearchLocation = ({userData}) => {
         setModalState(array);
     }, [cities])
 
-    // useEffect(() => {
-    //     !modalState.includes(selectedState) && resetLocalStorage();
-    // }, [selectedState, modalState])
-
     const searchLocation = () => {
         updateCorrectRegion('');
         setIsOpenSearchLocation(true);
-        setSelectedRegion('');
-        setSelectedState('');
+        setSelectRegion('');
+        setSelectState('');
     }
 
     const closeModal = () => {
@@ -42,7 +38,7 @@ const SearchLocation = ({userData}) => {
     const customStyles = {
         content: {
             height: 'auto',
-            // width: '50%',
+            width: 'auto',
             whiteSpace: 'nowrap',
             maxHeight: '65%',
             overflow: 'scroll',
@@ -65,53 +61,51 @@ const SearchLocation = ({userData}) => {
                 <div className={'search-location-modal'}>
 
                     <div className={'search-location-modal-title'}>
-                        {selectedState !== '' && selectedRegion === '' && <div onClick={() => {
-                            if (selectedState !== '') {
-                                setSelectedState('');
+                        {selectState !== '' && <div onClick={() => {
+                            if (selectState !== '') {
+                                setSelectState('');
+                                localStorage.removeItem('correctState');
+                            }
+                            if (selectState !== '' && selectRegion !== '') {
+                                setSelectRegion('');
+                                localStorage.removeItem('correctRegion');
                             }
                         }}><i className="fa fa-arrow-left"></i>
                         </div>}
-
-                        {selectedState === '' && <h3>Select your state</h3>}
-                        {selectedState !== '' && selectedRegion === '' && <h3>Select your region</h3>}
-                        {selectedState !== '' && (selectedRegion !== '' && selectedRegion !== 'other') &&
-                            <h3>Locations</h3>}
-
-                        <div onClick={() => {
-                            closeModal();
-                        }}><i className={'x-mark'}>&#x2716;</i></div>
-
+                        {selectState === '' && <h3>Select your state</h3>}
+                        {selectState !== '' && selectRegion === '' && <h3>Select your region</h3>}
+                        {selectState !== '' && (selectRegion !== '' && selectRegion !== 'other') && <h3>Locations</h3>}
+                        <div><i className={'x-mark'} onClick={closeModal}>&#x2716;</i></div>
                     </div>
 
                     <div className={'search-location-modal-body'}>
                         <ul>
-                            {selectedState && selectedRegion === '' && <li className={'selected-state'}
-                                                                           key={selectedState}>{selectedState}</li>}
+                            {selectState && selectRegion === '' && <li className={'selected-state'}
+                                                                       key={selectState}>{selectState}</li>}
 
-                            {selectedRegion !== '' && <li className={'selected-region'}
-                                                          key={selectedRegion}>{selectedRegion}</li>}
+                            {selectRegion !== '' && <li className={'selected-region'}
+                                                        key={selectRegion}>{selectRegion}</li>}
 
-                            {selectedState === '' && (
+                            {selectState === '' && (
                                 (Object.keys(userData['cities']).map((item) => {
                                     return <li key={item} className={'hover'} onClick={() => {
-                                        if (!modalState.includes(selectedRegion)) {
-                                            localStorage.setItem('correctState', 'Brisbane and South-East Queensland');
+                                        localStorage.setItem('correctState', item);
+                                        setSelectState(item);
+                                        setOther(true);
+                                        if (!!modalState.includes(item) === false) {
                                             window.location.replace('https://gutterguard.company');
                                             resetLocalStorage();
                                         }
-                                        localStorage.setItem('correctState', item);
-                                        setSelectedState(item);
-                                        setOther(true);
                                     }}>{item}</li>
                                 }))
                             )}
 
-                            {selectedState !== '' && selectedRegion === '' &&
+                            {selectState !== '' && selectRegion === '' &&
                                 (
-                                    Object.keys(cities[selectedState]).map((region => {
+                                    Object.keys(cities[selectState]).map((region => {
                                             return <li key={region} className={'hover'} onClick={() => {
                                                 localStorage.setItem('correctRegion', region);
-                                                setSelectedRegion(region);
+                                                setSelectRegion(region);
                                                 setOther(false);
                                                 updateCorrectRegion(region);
                                                 localStorage.removeItem('correctCity');
@@ -120,10 +114,10 @@ const SearchLocation = ({userData}) => {
                                     ))
                                 )
                             }
-                            {selectedState !== '' && selectedRegion !== '' && !modalState.includes(selectedRegion) && selectedRegion !== "other" && userData &&
-                                Object.keys(userData['modalUserLocation'][selectedRegion] || {}).map((region, index) => {
+                            {selectState !== '' && selectRegion !== '' && selectRegion !== "other" && userData &&
+                                Object.keys(userData['modalUserLocation'][selectRegion] || {}).map((region, index) => {
                                     return <li key={index}>{region}
-                                        {Object.values(userData['modalUserLocation'][selectedRegion])
+                                        {Object.values(userData['modalUserLocation'][selectRegion])
                                             .map((item, index) => {
                                                 return <ul key={index}>
                                                     <li>{item}</li>
@@ -132,7 +126,7 @@ const SearchLocation = ({userData}) => {
                                     </li>
                                 })}
                             {other === true && <li key={'other'} className={'hover'} onClick={() => {
-                                setSelectedRegion('other');
+                                setSelectRegion('other');
                                 setTimeout(() => {
                                     closeModal()
                                     localStorage.removeItem('correctCity');
@@ -143,7 +137,7 @@ const SearchLocation = ({userData}) => {
                                 setOther(false)
                             }}>Other</li>}
 
-                            {selectedState !== '' && (selectedRegion !== '' && selectedRegion === "other") &&
+                            {selectState !== '' && (selectRegion !== '' && selectRegion === "other") &&
                                 (
                                     <h5>Talk to our certified roofing professional about gutter guard installers
                                         and gutter replacement specialists in your area.

@@ -29,9 +29,7 @@ const Works = ({userData: {worksTitle, worksDescription}}) => {
             </div>
 
             <div className="video-wrapper">
-                <video className="video" poster={videoPoster}>
-                    <source src={videoWorks} type="video/mp4"/>
-                </video>
+                <video className="video" src={videoWorks} poster={videoPoster}></video>
                 <div className="playpause"></div>
             </div>
 

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32687be7-2ed6-4245-b4cc-81e224b0ec9f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Footer/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Main/Components/Works.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Main/Components/Works.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/SearchLocation/SearchLocation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SearchLocation/SearchLocation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/Serving.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/Serving.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/styles/Works.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/styles/Works.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GoHMshXJoE8J6iTi8mKEMCqzTB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Kelmend/Desktop/landingpage-gutterguard&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.1.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard" />
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard\public" />
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard\src\assets\styles" />
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard\src\Components" />
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard\src\Components\Main\Components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard\public" />
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard\src" />
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard" />
+      <recent name="C:\Users\Kelmend\Desktop\landingpage-gutterguard\gutterguard-landingpage" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32687be7-2ed6-4245-b4cc-81e224b0ec9f" name="Changes" comment="" />
+      <created>1667047975821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667047975821</updated>
+      <workItem from="1667047977892" duration="68580000" />
+      <workItem from="1667226304572" duration="5677000" />
+      <workItem from="1667248957133" duration="5206000" />
+      <workItem from="1667260889693" duration="8370000" />
+      <workItem from="1667271947585" duration="24019000" />
+      <workItem from="1667307399500" duration="852000" />
+      <workItem from="1667335115016" duration="14734000" />
+      <workItem from="1667474161002" duration="98973000" />
+      <workItem from="1667679404084" duration="22900000" />
+      <workItem from="1667782509689" duration="25234000" />
+      <workItem from="1667986513251" duration="9864000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/gutterguard-landingpage" />
+      <path value="$PROJECT_DIR$/landingpage-gutterguard" />
+    </ignored-roots>
+  </component>
+</project>

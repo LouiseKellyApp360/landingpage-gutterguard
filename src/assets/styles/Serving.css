@@ -194,9 +194,9 @@
     .roof-working-image {
         position: absolute;
         width: 40%;
-        height: 50%;
+        height: 300px;
         float: left;
-        margin-top: 78px;
+        margin-top: 58px;
         z-index: 20;
     }
 
@@ -205,11 +205,11 @@
         position: relative;
         float: right;
         width: 60%;
-        height: 500px;
+        height: 400px;
     }
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1399px) {
+@media only screen and (min-width: 1280px) and (max-width: 1439px) {
     .serving {
         margin: 0 80px 50px 80px;
     }
@@ -237,9 +237,9 @@
     .roof-working-image {
         position: absolute;
         width: 40%;
-        height: 50%;
+        height: 320px;
         float: left;
-        margin-top: 60px;
+        margin-top: 70px;
         z-index: 20;
     }
 

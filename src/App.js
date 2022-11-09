@@ -21,7 +21,7 @@ export const resetLocalStorage = () => {
 function App() {
     const jsonData = JSON.parse(JSON.stringify(jsonConfig));
     const cities = jsonData['cities'];
-    const getUserRegion = localStorage.getItem('correctRegion')
+    const getUserRegion = localStorage.getItem('correctRegion') || localStorage.setItem('correctRegion', "Brisbane and South-East Queensland");
     const getUserState = localStorage.getItem('correctState');
     const getUserCity = localStorage.getItem('correctCity');
     const [correctRegion, setCorrectRegion] = useState('');
@@ -69,10 +69,16 @@ function App() {
             getUserRegion && setUserData(jsonData[getUserRegion]);
         })
 
+        getUserRegion && setUserData(jsonData[getUserRegion]);
+
     }, [getUserRegion, findCity, userIpCity, correctRegion, getUserState, getUserCity]);
 
 
     // userIpCity && getUserState === null && window.location.replace("https://www.gutterguard.company/"); -> not needed
+    if (correctRegion !== '' && getUserRegion === null && cities[getUserState][getUserRegion].length === 0){
+        window.location.replace('https://gutterguard.company');
+        resetLocalStorage();
+    }
 
     Modal.setAppElement(document.getElementById('root'));
 

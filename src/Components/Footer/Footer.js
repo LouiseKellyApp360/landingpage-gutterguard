@@ -4,7 +4,7 @@ import '../../assets/styles/Footer.css';
 const Footer = ({userData: {footerContactUs, footerLocation, footerLogo, footerLogoName, footerAddress}}) => {
 
     return (
-        <div className={'footer-container'}>
+        <div className={'footer-container container-fluid'}>
             <div className={'footer-logo'} onClick={() => {
                 window.location.replace("https://www.gutterguard.company")
             }}>
