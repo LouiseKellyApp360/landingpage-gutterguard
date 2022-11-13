@@ -388,7 +388,7 @@
     .customer {
         width: 412px;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
         text-align: center;
         margin: 0 auto;
     }

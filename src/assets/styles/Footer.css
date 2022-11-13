@@ -375,7 +375,7 @@
 
     .footer-links {
         flex-direction: row;
-        gap: 30px;
+        gap: 40px;
     }
 
     .footer-links > div h3 {
@@ -424,7 +424,7 @@
 
     .footer-links {
         flex-direction: row;
-        gap: 40px;
+        gap: 50px;
     }
 
     .footer-links > div h3 {
