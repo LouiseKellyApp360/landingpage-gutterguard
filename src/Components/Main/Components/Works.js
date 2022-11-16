@@ -29,7 +29,8 @@ const Works = ({userData: {worksTitle, worksDescription}}) => {
             </div>
 
             <div className="video-wrapper">
-                <video className="video" src={videoWorks} poster={videoPoster}></video>
+                <video className="video" src={videoWorks} poster={videoPoster} controls controlsList="nodownload">
+                </video>
                 <div className="playpause"></div>
             </div>
 

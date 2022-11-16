@@ -40,6 +40,7 @@
     border: 0;
     color: #1F3D27;
     border-radius: 6px;
+    font-family: Poppins-Medium, sans-serif;
 }
 
 .search-location-modal-title .x-mark {
@@ -79,7 +80,7 @@
 @media screen and (max-width: 340px) {
     .search-location h3 {
         font-size: 12px;
-        margin: 20px 5px;
+        margin: 15px 5px;
     }
 
     .search-location button {
@@ -126,12 +127,12 @@
 @media screen and (min-width: 341px) and (max-width: 389px) {
     .search-location h3 {
         font-size: 12px;
-        margin: 20px 10px;
+        margin: 15px 10px;
     }
 
     .search-location button {
         font-size: 12px;
-        height: 30px;
+        height: 25px;
         width: 140px;
     }
 
@@ -174,13 +175,13 @@
 @media screen and (min-width: 390px) and (max-width: 426px) {
     .search-location h3 {
         font-size: 12px;
-        margin: 20px 10px;
+        margin: 15px 10px;
     }
 
     .search-location button {
         margin-left: 20px;
         font-size: 12px;
-        height: 30px;
+        height: 25px;
         width: 150px;
     }
 
@@ -222,13 +223,13 @@
 @media screen and (min-width: 427px) and (max-width: 767px) {
     .search-location h3 {
         font-size: 12px;
-        margin: 20px 10px;
+        margin: 15px 10px;
     }
 
     .search-location button {
         margin-left: 20px;
         font-size: 12px;
-        height: 30px;
+        height: 25px;
         width: 150px;
     }
 
@@ -272,13 +273,13 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .search-location h3 {
         font-size: 12px;
-        margin: 20px 10px;
+        margin: 15px 10px;
     }
 
     .search-location button {
         margin-left: 20px;
         font-size: 12px;
-        height: 30px;
+        height: 25px;
         width: 150px;
     }
 
@@ -324,14 +325,14 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .search-location h3 {
-        font-size: 20px;
-        margin: 28px 40px;
+        font-size: 14px;
+        margin: 15px 40px;
     }
 
     .search-location button {
         margin-left: 40px;
-        font-size: 20px;
-        height: 40px;
+        font-size: 14px;
+        height: 30px;
         width: 250px;
     }
 
@@ -368,14 +369,14 @@
 
 @media screen and (min-width: 1280px) and (max-width: 1439px) {
     .search-location h3 {
-        font-size: 20px;
-        margin: 28px 40px;
+        font-size: 14px;
+        margin: 15px 40px;
     }
 
     .search-location button {
         margin-left: 40px;
-        font-size: 20px;
-        height: 40px;
+        font-size: 14px;
+        height: 30px;
         width: 250px;
     }
 
@@ -411,14 +412,14 @@
 
 @media screen and (min-width: 1440px) and (max-width: 1679px) {
     .search-location h3 {
-        font-size: 20px;
-        margin: 28px 40px;
+        font-size: 14px;
+        margin: 15px 40px;
     }
 
     .search-location button {
         margin-left: 40px;
-        font-size: 20px;
-        height: 40px;
+        font-size: 14px;
+        height: 30px;
         width: 250px;
     }
 
@@ -459,14 +460,14 @@
 
 @media screen and (min-width: 1680px) {
     .search-location h3 {
-        font-size: 20px;
-        margin: 28px 40px;
+        font-size: 14px;
+        margin: 15px 40px;
     }
 
     .search-location button {
         margin-left: 40px;
-        font-size: 20px;
-        height: 40px;
+        font-size: 14px;
+        height: 30px;
         width: 250px;
     }
 

@@ -10,7 +10,7 @@ const Header = ({userData: {headerTitle, headerLogo, headerLogoName, phoneNumber
             </div>
             <div className={'header-menu'}>
                 <div className={'header-logo'} onClick={() => {
-                    window.location.href = "https://www.gutterguard.company";
+                    window.location.replace("https://www.gutterguard.company");
                 }}>
                     <img src={headerLogo} alt={'logo'}/>
                     <p style={{cursor: "context-menu"}}>{headerLogoName}</p>

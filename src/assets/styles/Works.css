@@ -226,7 +226,7 @@
 
     .works-title h1 {
         margin: 0 auto;
-        width: 80%;
+        width: 90%;
         font-size: 32px;
         text-align: center;
     }
@@ -290,7 +290,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1679px) {
+@media screen and (min-width: 1440px) and (max-width: 1678px) {
     .works {
         margin: 64px;
     }
@@ -328,7 +328,7 @@
     }
 }
 
-@media screen and (min-width: 1680px) {
+@media screen and (min-width: 1679px) {
     .works {
         margin: 120px;
     }
@@ -339,8 +339,8 @@
     }
 
     .works-title h1 {
-        margin: 0 290px;
-        width: 1095px;
+        margin: 0 auto;
+        width: 80%;
         font-size: 48px;
         text-align: center;
     }
