@@ -34,9 +34,9 @@ function App() {
     }
 
     //Todo: remove the comment below
-    //code works good at 4:59 AM 11/5/2022
-    //code works good at 11:30 PM 11/5/2022
-    //code works good at 3:32 PM 11/7/2022
+    //Todo: code works good at 4:59 AM 11/5/2022
+    //Todo: code works good at 11:30 PM 11/5/2022
+    //Todo: code works good at 3:32 PM 11/7/2022
     useEffect(() => {
         const userIp = async () => {
             await axios.get('https://ipapi.co/json')
