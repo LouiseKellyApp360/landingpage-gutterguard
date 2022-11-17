@@ -115,7 +115,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 14px;
         margin: 0 0 5px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bold', sans-serif;
     }
 
     .search-location-modal-body ul li {
@@ -163,7 +163,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 14px;
         margin: 0 0 5px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bold', sans-serif;
     }
 
     .search-location-modal-body ul li {
@@ -212,7 +212,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 14px;
         margin: 0 0 5px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bol', sans-serif;
     }
 
     .search-location-modal-body ul li {
@@ -256,7 +256,7 @@
 
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 14px;
-        fontStyle: 'Poppins-Bold, sans-serif';
+        font-family: 'Poppins-Bold', sans-serif;
         margin: 20px 0;
     }
 
@@ -314,7 +314,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 16px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bold', sans-serif;
     }
 
     .search-location-modal-body ul li {
@@ -358,7 +358,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 18px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bold', sans-serif;
     }
 
     .search-location-modal-body ul li {
@@ -392,7 +392,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 22px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bold', sans-serif;
     }
 
     .search-location-modal .search-location-modal-title h3 {
@@ -448,7 +448,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 25px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bold', sans-serif;
     }
 
     .search-location-modal-body ul li {
@@ -493,7 +493,7 @@
     .search-location-modal-body ul li.selected-state, .search-location-modal-body ul li.selected-region {
         font-size: 32px;
         margin: 0 0 15px 0;
-        fontStyle: 'Poppins-Bold, sans-serif'
+        font-family: 'Poppins-Bold', sans-serif;
     }
 
     .search-location-modal-body {
