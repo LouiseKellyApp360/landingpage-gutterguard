@@ -9,9 +9,7 @@ const Header = ({userData: {headerTitle, headerLogo, headerLogoName, phoneNumber
                 <h5 style={{textAlign: 'center'}}>{headerTitle}</h5>
             </div>
             <div className={'header-menu'}>
-                <div className={'header-logo'} onClick={() => {
-                    window.location.replace("https://www.gutterguard.company");
-                }}>
+                <div className={'header-logo'}>
                     <img src={headerLogo} alt={'logo'}/>
                     <p style={{cursor: "context-menu"}}>{headerLogoName}</p>
                 </div>

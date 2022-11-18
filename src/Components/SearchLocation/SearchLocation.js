@@ -117,7 +117,7 @@ const SearchLocation = ({userData}) => {
                             {selectState !== '' && selectRegion !== '' && selectRegion !== "other" && userData &&
                                 Object.keys(userData['modalUserLocation'][selectRegion] || {}).map((region, index) => {
                                     return <li key={index}>{region}
-                                        {Object.values(userData['modalUserLocation'][selectRegion])
+                                        {Object.values(userData['modalUserLocation'][selectRegion])[index]
                                             .map((item, index) => {
                                                 return <ul key={index}>
                                                     <li>{item}</li>

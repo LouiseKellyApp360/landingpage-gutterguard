@@ -1,20 +1,73 @@
 {
   "cities": {
     "New South Wales": {
-      "Coffs Harbour and the Mid North Coast": ["Coffs Habour", "Byron Bay", "Lismore", "Ballina", "Grafton", "Lennox Head", "Yamba",
-        "Maclean", "Evans Head", "Dorrigo", "Bellingen", "Urunga", "Nambucca Heads", "Macksvile", "South West Rocks",
-        "Kempsey", "Port Macquarie", "Cresent Head", "Lake Cathie", "Harrington", "Taree", "Woolgoola",
+      "Coffs Harbour and the Mid North Coast": [
+        "Coffs Habour",
+        "Byron Bay",
+        "Lismore",
+        "Ballina",
+        "Grafton",
+        "Lennox Head",
+        "Yamba",
+        "Maclean",
+        "Evans Head",
+        "Dorrigo",
+        "Bellingen",
+        "Urunga",
+        "Nambucca Heads",
+        "Macksvile",
+        "South West Rocks",
+        "Kempsey",
+        "Port Macquarie",
+        "Cresent Head",
+        "Lake Cathie",
+        "Harrington",
+        "Taree",
+        "Woolgoola",
+        "Wollombi",
         "Armidale"
       ],
       "Newcastle and the Greater Hunter": [
-        "Newcastle", "Wollombi", "Forster", "Seals Rocks", "Buladelah", "Stroud", "Dungog", "East Gresford", "Singleton",
-        "Mount Thorley", "Broke", "Pokolbin", "Cessnock", "Raymond Terrace", "Newcastle", "Charlestown", "Morriset",
-        "Tuggerah", "Gosford", "Port Stephens", "Maitland", "Mussellbrook", "Lake Macquarie", "Wallsend", "Stockton",
+        "Newcastle",
+        "Forster",
+        "Seals Rocks",
+        "Buladelah",
+        "Stroud",
+        "Dungog",
+        "East Gresford",
+        "Singleton",
+        "Mount Thorley",
+        "Broke",
+        "Pokolbin",
+        "Cessnock",
+        "Raymond Terrace",
+        "Charlestown",
+        "Morriset",
+        "Tuggerah",
+        "Gosford",
+        "Port Stephens",
+        "Maitland",
+        "Mussellbrook",
+        "Lake Macquarie",
+        "Wallsend",
+        "Stockton",
         "Swansea"
       ],
       "Orange and the Central West": [
-        "Orange", "Dubbo", "Wellington", "Mudgee", "Peak Hill", "Bathurst", "Molong", "Parkes", "Forbes", "Eugowra",
-        "Canowindra", "Cowra", "Grenfel", "Young"
+        "Orange",
+        "Dubbo",
+        "Wellington",
+        "Mudgee",
+        "Peak Hill",
+        "Bathurst",
+        "Molong",
+        "Parkes",
+        "Forbes",
+        "Eugowra",
+        "Canowindra",
+        "Cowra",
+        "Grenfel",
+        "Young"
       ]
     },
     "Victoria": {
@@ -22,8 +75,22 @@
     },
     "Queensland": {
       "Brisbane and South-East Queensland": [
-        "Brisbane", "Stradbroke Island", "Sunshine Coast", "Moolooba", "Caboolture", "Morayfield", "Burpengary", "North Lakes", "Brendale",
-        "Ipswich", "Pimpama", "Southport", "Gold Coast", "Coolangatta", "Kingscliff"
+        "Brisbane",
+        "Stradbroke Island",
+        "Sunshine Coast",
+        "Moolooba",
+        "Caboolture",
+        "Morayfield",
+        "Burpengary",
+        "North Lakes",
+        "Brendale",
+        "Ipswich",
+        "Pimpama",
+        "Southport",
+        "Gold Coast",
+        "Burleigh Head",
+        "Coolangatta",
+        "Kingscliff"
       ]
     },
     "South Australia": {
@@ -37,35 +104,109 @@
     },
     "Australian Capital Territory": {
       "Canberra and the Australian Capital Territory": [
-        "Canberra", "Goulburn", "Collector", "Tarago", "Canberra", "Braidwood", "Canberra", "Queanbeyan", "Michelago",
-        "Bredbo", "Cooma", "Belconnen", "Canberra Central", "Gungahlin", "Jerrabomberra", "Majura", "Molonglo Valley",
-        "Tuggeranong", "Weston Creek"
+        "Canberra",
+        "Goulburn",
+        "Collector",
+        "Tarago",
+        "Braidwood",
+        "Queanbeyan",
+        "Michelago",
+        "Bredbo",
+        "Cooma",
+        "Belconnen",
+        "Canberra Central",
+        "Gungahlin",
+        "Jerrabomberra",
+        "Majura",
+        "Molonglo Valley",
+        "Tuggeranong",
+        "Weston Creek"
       ]
     }
   },
   "modalUserLocation": {
-    "Coffs Harbour and the Mid North Coast": {"Coffs Harbour": ["Coffs Harbour City"],
-      "Mid North Coast region": ["Byron to Taree", "Mid North Coast to Armidale"]},
-    "Newcastle and the Greater Hunter": {"Newcastle City":  ["Newcastle City"],
-      "Hunter region": ["Forster to Gosford","Newcastle to Upper Hunter"]},
+    "Coffs Harbour and the Mid North Coast": {
+      "Coffs Harbour": [
+        "Coffs Harbour City"
+      ],
+      "Mid North Coast region": [
+        "Byron to Taree",
+        "Mid North Coast to Armidale"
+      ]
+    },
+    "Newcastle and the Greater Hunter": {
+      "Newcastle City": [
+        "Newcastle City"
+      ],
+      "Hunter region": [
+        "Forster to Gosford",
+        "Newcastle to Upper Hunter"
+      ]
+    },
     "Brisbane and South-East Queensland": {
-      "Brisbane": ["Brisbane City"], "South-East Queensland region": ["Sunshine Coast to the Gold Coast",
-        "Stradbroke Island to Ipswich"]
+      "Brisbane": [
+        "Brisbane City"
+      ],
+      "South-East Queensland region": [
+        "Sunshine Coast to the Gold Coast",
+        "Stradbroke Island to Ipswich"
+      ]
     },
     "Canberra and the Australian Capital Territory": {
-      "Canberra": ["Canberra City"], "Australian Capital Territory region": ["Goulburn to Cooma"]
+      "Canberra": [
+        "Canberra City"
+      ],
+      "Australian Capital Territory region": [
+        "Goulburn to Cooma"
+      ]
     },
-    "Orange and the Central West": {"Orange": ["Orange City", "Bathurst City", "Blaney City"],
-      "Central West region": ["Dubbo to Young",
-      "Bathurst to Forbes"]},
-    "Greater Melbourne": {"Melbourne": ["Melbourne City"],
-      "Greater Melbourne region": ["Mornington Peninsular to Geelong", "Port Phillip to Mitchell"]},
-    "Greater Adelaide": {"Adelaide":  ["Adelaide City"], "Greater Adelaide region":  ["Adelaide Hills to Port Adelaide",
-      "Playford to Onkaparinga"]},
-    "Greater Perth": {"Perth":  ["Perth City"], "Greater Perth region": ["Mundaring to Fremantle",
-      "Seabird to Preston Beach"]},
-    "Greater Hobart": {"Hobart":  ["Hobart City"], "Greater Hobart region": ["Cranbrook to Dover",
-      "Port Arthur to Bronte Park"]}
+    "Orange and the Central West": {
+      "Orange": [
+        "Orange City",
+        "Bathurst City",
+        "Blaney City"
+      ],
+      "Central West region": [
+        "Dubbo to Young",
+        "Bathurst to Forbes"
+      ]
+    },
+    "Greater Melbourne": {
+      "Melbourne": [
+        "Melbourne City"
+      ],
+      "Greater Melbourne region": [
+        "Mornington Peninsular to Geelong",
+        "Port Phillip to Mitchell"
+      ]
+    },
+    "Greater Adelaide": {
+      "Adelaide": [
+        "Adelaide City"
+      ],
+      "Greater Adelaide region": [
+        "Adelaide Hills to Port Adelaide",
+        "Playford to Onkaparinga"
+      ]
+    },
+    "Greater Perth": {
+      "Perth": [
+        "Perth City"
+      ],
+      "Greater Perth region": [
+        "Mundaring to Fremantle",
+        "Seabird to Preston Beach"
+      ]
+    },
+    "Greater Hobart": {
+      "Hobart": [
+        "Hobart City"
+      ],
+      "Greater Hobart region": [
+        "Cranbrook to Dover",
+        "Port Arthur to Bronte Park"
+      ]
+    }
   },
   "Coffs Harbour and the Mid North Coast": {
     "headerTitle": "Gutters and gutter guards for the Mid North Coast",
@@ -114,7 +255,6 @@
         "West Coffs",
         "Red Hill",
         "Coffs Habour Jetty"
-
       ],
       "Coffs Coast Region": [
         "Woolgoola",
@@ -234,8 +374,9 @@
         "Fortitude Valley",
         "New Farm",
         "Highgate Hill",
-        "Brisbane City",
-        "South-East Queensland",
+        "Brisbane City"
+      ],
+      "South-East Queensland": [
         "Sunshine Coast to Gold Coast",
         "Stradebroke Island to Ipswich"
       ]
@@ -291,10 +432,7 @@
         "Majura",
         "Molonglo Valley",
         "Tuggeranong",
-        "Weston Creek",
-        "Mid North Coast",
-        "Byron to Taree",
-        "Coast to Armidale"
+        "Weston Creek"
       ],
       "Australian-Capital-Territory-region": [
         "Goulburn to Comma"
