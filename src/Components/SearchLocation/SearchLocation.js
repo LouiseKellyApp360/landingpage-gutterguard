@@ -109,6 +109,7 @@ const SearchLocation = ({userData}) => {
                                                 setOther(false);
                                                 updateCorrectRegion(region);
                                                 localStorage.removeItem('correctCity');
+                                                localStorage.setItem('correctRegion', region);
                                             }}>{region}</li>
                                         }
                                     ))
