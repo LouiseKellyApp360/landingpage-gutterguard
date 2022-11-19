@@ -92,10 +92,6 @@ const SearchLocation = ({userData}) => {
                                         localStorage.setItem('correctState', item);
                                         setSelectState(item);
                                         setOther(true);
-                                        if (!!modalState.includes(item) === false) {
-                                            window.location.replace('https://gutterguard.company');
-                                            resetLocalStorage();
-                                        }
                                     }}>{item}</li>
                                 }))
                             )}
@@ -104,46 +100,69 @@ const SearchLocation = ({userData}) => {
                                 (
                                     Object.keys(cities[selectState]).map((region => {
                                             return <li key={region} className={'hover'} onClick={() => {
+                                                let saveRegion = localStorage.getItem('correctRegion');
                                                 localStorage.setItem('correctRegion', region);
                                                 setSelectRegion(region);
                                                 setOther(false);
                                                 updateCorrectRegion(region);
                                                 localStorage.removeItem('correctCity');
                                                 localStorage.setItem('correctRegion', region);
+                                                if (!!modalState.includes(selectState) === false) {
+                                                    resetLocalStorage()
+                                                    localStorage.setItem('correctRegion', saveRegion);
+                                                }
                                             }}>{region}</li>
                                         }
                                     ))
                                 )
                             }
-                            {selectState !== '' && selectRegion !== '' && selectRegion !== "other" && userData &&
-                                Object.keys(userData['modalUserLocation'][selectRegion] || {}).map((region, index) => {
-                                    return <li key={index}>{region}
-                                        {Object.values(userData['modalUserLocation'][selectRegion])[index]
-                                            .map((item, index) => {
-                                                return <ul key={index}>
-                                                    <li>{item}</li>
-                                                </ul>
+                            {
+                                (selectState !== '' && selectRegion !== '' && selectRegion !== "other" && userData) ?
+                                    <div>
+                                        <ul>
+                                            {Object.keys(userData['modalUserLocation'][selectRegion] || {}).map((region, index) => {
+                                                return <li key={index}>{region}
+                                                    {
+                                                        Object.values(userData['modalUserLocation'][selectRegion])[index]
+                                                            .map((item, index) => {
+                                                                return <ul key={index}>
+                                                                    <li>{item}</li>
+                                                                </ul>
+                                                            })
+                                                    }
+                                                </li>
                                             })}
-                                    </li>
-                                })}
+                                        </ul>
+                                        <div className={'button-enquire-container'}>
+                                            <button className={'btn-enquire'} onClick={() => {
+                                                !!modalState.includes(selectState) === false ?
+                                                    window.location.replace('https://gutterguard.company') :
+                                                    closeModal();
+                                            }}>Enquire now
+                                            </button>
+                                        </div>
+                                    </div> : null
+                            }
+
                             {other === true && <li key={'other'} className={'hover'} onClick={() => {
                                 setSelectRegion('other');
-                                setTimeout(() => {
-                                    closeModal()
-                                    localStorage.removeItem('correctCity');
-                                    localStorage.removeItem('correctRegion');
-                                    localStorage.removeItem('correctState');
-                                    window.location.replace('https://gutterguard.company')
-                                }, 3000);
                                 setOther(false)
                             }}>Other</li>}
 
-                            {selectState !== '' && (selectRegion !== '' && selectRegion === "other") &&
+                            {selectState !== '' && (selectRegion !== '' && selectRegion === "other") ?
                                 (
-                                    <h5>Talk to our certified roofing professional about gutter guard installers
-                                        and gutter replacement specialists in your area.
-                                    </h5>
-                                )}
+                                    <div>
+                                        <h5>Talk to our certified roofing professional about gutter guard installers
+                                            and gutter replacement specialists in your area.
+                                        </h5>
+                                        <div className={'button-enquire-container'}>
+                                            <button className={'btn-enquire'} onClick={() => {
+                                                window.location.replace('https://gutterguard.company')
+                                            }}>Enquire now
+                                            </button>
+                                        </div>
+                                    </div>
+                                ) : null}
                         </ul>
                     </div>
                 </div>

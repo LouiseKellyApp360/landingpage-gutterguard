@@ -70,8 +70,7 @@ function App() {
     }, [getUserRegion, findCity, userIpCity, correctRegion, getUserState, getUserCity]);
 
 
-    // userIpCity && getUserState === null && window.location.replace("https://www.gutterguard.company/"); -> not needed
-    if (correctRegion !== '' && getUserRegion === null && cities[getUserState][getUserRegion].length === 0){
+    if (correctRegion !== '' && getUserRegion === null && cities[getUserState][getUserRegion].length === 0) {
         window.location.replace('https://gutterguard.company');
         resetLocalStorage();
     }
